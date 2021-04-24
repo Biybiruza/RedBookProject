@@ -18,9 +18,9 @@ abstract class RedBookDatabase: RoomDatabase() {
             "book-database.db"
         )
             .createFromAsset("book-database.db")
+            .allowMainThreadQueries()
             .build()
     }
-
 
     abstract fun dao():AnimalDao
 }
