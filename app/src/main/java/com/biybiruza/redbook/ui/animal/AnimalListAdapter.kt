@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.biybiruza.redbook.R
 import com.biybiruza.redbook.data.model.Animal
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.item_animal.view.*
 
 class AnimalListAdapter : RecyclerView.Adapter<AnimalListAdapter.AnimalViewHolder>() {
@@ -14,6 +15,10 @@ class AnimalListAdapter : RecyclerView.Adapter<AnimalListAdapter.AnimalViewHolde
             itemView.tvUzName.text = animal.nameUzb
             itemView.tvEngName.text = animal.nameEng
             itemView.tvRusName.text = animal.nameRus
+            var imageResName = "picture${animal.id}"
+            Glide.with(itemView)
+                .load(itemView.context.resources.getIdentifier(imageResName, "drawable", itemView.context.packageName))
+                .into(itemView.ivAnimal)
         }
     }
 
