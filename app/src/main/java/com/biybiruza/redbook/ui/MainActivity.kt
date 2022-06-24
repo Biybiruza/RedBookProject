@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
             when(it.itemId){
                 R.id.nav_invertebrates -> {
                     bBundle.putInt(TYPE_ID, INVERTEBRATES)
-                    bFragment.arguments = bBundle}
+                    bFragment.arguments = bBundle }
                 R.id.nav_fishes -> {
                     bBundle.putInt(TYPE_ID, FISHES)
                     bFragment.arguments = bBundle}
