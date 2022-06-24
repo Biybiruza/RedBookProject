@@ -6,7 +6,8 @@ import com.biybiruza.redbook.data.model.Animal
 
 @Dao
 interface AnimalDao {
-    @Query("SELECT * FROM book")
-    fun getAllAnimals(): List<Animal>
+
+    @Query("SELECT * FROM book WHERE type = :type")
+    fun getAllAnimals(type:Int): List<Animal>
     
 }

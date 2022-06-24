@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.RoomMasterTable
 import com.biybiruza.redbook.data.dao.AnimalDao
 import com.biybiruza.redbook.data.model.Animal
 
@@ -18,9 +19,9 @@ abstract class RedBookDatabase: RoomDatabase() {
             "book-database.db"
         )
             .createFromAsset("book-database.db")
+            .allowMainThreadQueries()
             .build()
     }
-
 
     abstract fun dao():AnimalDao
 }
