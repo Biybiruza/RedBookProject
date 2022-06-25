@@ -9,7 +9,7 @@ import com.biybiruza.redbook.data.model.Animal
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.item_animal.view.*
 
-class AnimalListAdapter : RecyclerView.Adapter<AnimalListAdapter.AnimalViewHolder>() {
+class AnimalListAdapter(private val listener: AnimalItemClickListener) : RecyclerView.Adapter<AnimalListAdapter.AnimalViewHolder>() {
     inner class AnimalViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
         fun populateModel(animal: Animal){
             itemView.tvUzName.text = animal.nameUzb
@@ -19,6 +19,9 @@ class AnimalListAdapter : RecyclerView.Adapter<AnimalListAdapter.AnimalViewHolde
             Glide.with(itemView)
                 .load(itemView.context.resources.getIdentifier(imageResName, "drawable", itemView.context.packageName))
                 .into(itemView.ivAnimal)
+            itemView.setOnClickListener {
+                listener.onAnimalItemClick(animal.id)
+            }
         }
     }
 
