@@ -12,4 +12,7 @@ interface AnimalDao {
 
     @Query("SELECT * FROM book WHERE id = :id")
     fun getAnimalById(id: Int): Animal
+
+    @Query("SELECT * FROM book WHERE type = :type and nameEng like :word")
+    fun searchAnimalBYName(type: Int, word: String) : List<Animal>
 }
