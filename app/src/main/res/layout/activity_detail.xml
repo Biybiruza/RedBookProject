@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.detail.DetailActivity">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/detailImg"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/detailStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailImg"
+            android:text="@string/status"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginStart="@dimen/standard_margin"/>
+        <TextView
+            android:id="@+id/detailStatusContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailStatus"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginStart="@dimen/standard_margin"/>
+
+        <TextView
+            android:id="@+id/detailPropagation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailStatusContent"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginStart="@dimen/standard_margin"
+            android:text="@string/propagation"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"/>
+
+        <TextView
+            android:id="@+id/detailPropagationContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/margin_small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailPropagation" />
+
+        <TextView
+            android:id="@+id/detailHabitat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailPropagationContent"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginStart="@dimen/standard_margin"
+            android:text="@string/habitat"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"/>
+        <TextView
+            android:id="@+id/detailHabitatContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailHabitat"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginStart="@dimen/standard_margin"/>
+
+        <TextView
+            android:id="@+id/detailQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailHabitatContent"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginStart="@dimen/standard_margin"
+            android:text="@string/quantity"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"/>
+        <TextView
+            android:id="@+id/detailQuantityContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailQuantity"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginStart="@dimen/standard_margin"/>
+
+        <TextView
+            android:id="@+id/detailLifestyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailQuantityContent"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginStart="@dimen/standard_margin"
+            android:text="@string/lifestyle"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"/>
+        <TextView
+            android:id="@+id/detailLifestyleContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailLifestyle"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginStart="@dimen/standard_margin"/>
+
+        <TextView
+            android:id="@+id/detailLimitingFactors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailLifestyleContent"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginStart="@dimen/standard_margin"
+            android:text="@string/limiting_factors"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"/>
+        <TextView
+            android:id="@+id/detailLimitingFactorsContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailLimitingFactors"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginStart="@dimen/standard_margin"/>
+
+        <TextView
+            android:id="@+id/detailBreeding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailLimitingFactorsContent"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginStart="@dimen/standard_margin"
+            android:text="@string/breeding"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"/>
+        <TextView
+            android:id="@+id/detailBreedingContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailBreeding"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginStart="@dimen/standard_margin"/>
+
+        <TextView
+            android:id="@+id/detailSecurity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailBreedingContent"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginStart="@dimen/standard_margin"
+            android:text="@string/security"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"/>
+        <TextView
+            android:id="@+id/detailSecurityContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailSecurity"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginStart="@dimen/standard_margin"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
