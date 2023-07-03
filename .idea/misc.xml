@@ -3,10 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Kurslar/andriod/andriod project/AndroidStudioProjects/RedBook/app/src/main/res/drawable/ic_baseline_bookmark_24.xml" value="0.156" />
         <entry key="..\:/Kurslar/andriod/andriod project/AndroidStudioProjects/RedBook/app/src/main/res/layout/activity_detail.xml" value="0.33" />
         <entry key="..\:/Kurslar/andriod/andriod project/AndroidStudioProjects/RedBook/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Kurslar/andriod/andriod project/AndroidStudioProjects/RedBook/app/src/main/res/layout/fragment_animal.xml" value="0.12047101449275362" />
         <entry key="..\:/Kurslar/andriod/andriod project/AndroidStudioProjects/RedBook/app/src/main/res/layout/item_animal.xml" value="0.1947463768115942" />
+        <entry key="..\:/Kurslar/andriod/andriod project/AndroidStudioProjects/RedBook/app/src/main/res/menu/menu_detail.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">RedBook</string>
+    <string name="app_name">Red Book animals</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Red Book animals</string>
+    <string name="nav_header_subtitle">ibashovabiybiruza@gmail.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
@@ -11,11 +11,12 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="search">Search</string>
-    <string name="menu_invertebrates">Omırtqasızlar</string>
-    <string name="menu_fishes">Balıqlar</string>
-    <string name="menu_mammals">Sútemiziwshiler</string>
-    <string name="menu_birds">Quslar</string>
-    <string name="menu_reptiles">Jerbawırlawshilar</string>
+    <string name="menu_invertebrates">Омыртқасызлар</string>
+    <string name="menu_fishes">Балықлар</string>
+    <string name="menu_mammals">Сүтемизиўшилер</string>
+    <string name="menu_birds">Қуслар</string>
+    <string name="menu_reptiles">Жербаўырлаўшилар</string>
+    <string name="menu_favorite">Cайландылар</string>
     <string name="status">Status</string>
     <string name="propagation">Propagation</string>
     <string name="habitat">Habitat</string>
@@ -24,4 +25,5 @@
     <string name="limiting_factors">Limiting factors</string>
     <string name="breeding">Breeding</string>
     <string name="security">Security</string>
+    <string name="bookmark">Bookmark</string>
 </resources>
