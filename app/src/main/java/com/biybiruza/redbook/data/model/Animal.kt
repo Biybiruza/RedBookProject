@@ -19,6 +19,6 @@ data class Animal(
     @ColumnInfo(name = "lifestyle") val lifestyle:String,
     @ColumnInfo(name = "limitingFactors") val limitingFactors:String,
     @ColumnInfo(name = "breeding") val breeding:String,
-    @ColumnInfo(name = "security") val security:String
-
+    @ColumnInfo(name = "security") val security:String,
+    @ColumnInfo(name = "isFavourite") var isFavourite: Int? = 0
     )
